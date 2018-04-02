@@ -10,12 +10,10 @@ MUTATE_PROBABILITY = 1
 def fitness(password, test_word):
     '''Here fitness is calculated based on number of letter that matches with password.'''
     count = 0
-    ascii_password = np.fromstring(password, dtype=np.uint8)
-    ascii_test_word = np.fromstring(test_word, dtype=np.uint8)
-    for i in range(len(ascii_password)):
-        if ascii_password[i] == ascii_test_word[i]:
+    for i in range(len(password)):
+        if password[i] == test_word[i]:
             count += 1
-    return (count*100) / len(ascii_password)
+    return (count*100) / len(password)
 
 def generate_word(password):
     word = []
