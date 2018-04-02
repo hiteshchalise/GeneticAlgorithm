@@ -4,7 +4,7 @@ import random
 
 POPULATION_SIZE = 500
 #
-PASSWORD = 'hitesh is the best'
+PASSWORD = 'This is target phrase'
 MUTATE_PROBABILITY = 1
 
 def fitness(password, test_word):
